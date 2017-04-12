@@ -24,6 +24,20 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="js/jquery.backstretch.min.js"></script>
 
+		<script>
+			function initMap() {
+				var uluru = {lat: 6.7881, lng: 79.8913};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 16,
+					center: uluru
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+			}
+		</script>
+
 
 
 	</head>
@@ -85,7 +99,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 		<!-- Two -->
 			<section id="two" class="wrapper style2">
 				<header class="major">
@@ -150,8 +164,12 @@
 						</div>
 					</div>
 				</div>
-			</section>			
-			
+			</section>
+
+		<section  id="map" class="wrapper style2" style="height: 400px;">
+
+		</section>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
@@ -197,6 +215,9 @@
 					</ul>
 				</div>
 			</footer>
+		<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrjdmBk8zy2uHs_cV-t77XJV2sIkApGpA&callback=initMap">
+		</script>
 		<script>
 			$("#banner").backstretch([
 				"images/pic02.jpg",
