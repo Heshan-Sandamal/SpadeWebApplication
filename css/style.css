@@ -977,7 +977,7 @@
 /* Banner */
 
 	#banner {
-		background-color: #666666;
+		/*background-color: #666666;*/
 		background-image: url("../images/cat_circularsawblades_1(3).jpg");
 		background-size: cover;
 		background-position: center center;
@@ -986,6 +986,7 @@
 		padding: 14em 0;
 		text-align: center;
 		position: relative;
+		/*background: rgba(64, 72, 80, 0.25);*/
 	}
 
 		#banner:before {
@@ -1001,6 +1002,7 @@
 		#banner .inner {
 			position: relative;
 			z-index: 1;
+			/*background: rgba(64, 72, 80, 0.25);*/
 		}
 
 			#banner .inner :last-child {
